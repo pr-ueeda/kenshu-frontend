@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+html {
+    font-family: system-ui, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+
+.header {
+    position: absolute;
+    width: 1440px;
+    height: 75px;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    background-color: #24436F;
+}
+.header-container {
+    position: absolute;
+    width: 1126px;
+    height: 75px;
+    left: 175px;
+    top: 0;
+
+}
+.header-small-container {
+    position: absolute;
+    width: 1126px;
+    height: 30px;
+    left: 0;
+    top: 13px;
+
+}
+
+.frame {
+    position: absolute;
+    width: 485px;
+    height: 30px;
+    left: 0;
+    top: 0;
+}
+.logo {
+    position: absolute;
+    width: 122px;
+    height: 22px;
+    left: 0;
+    top: 4px;
+}
+
+.header-text-1 {
+    position: absolute;
+    width: 335px;
+    height: 30px;
+    margin: 0;
+    left: 140px;
+    top: 0;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #BFC9D7;
+
+}
+.release {
+    position: absolute;
+    width: 316px;
+    height: 30px;
+    left: 511px;
+    top: 0;
+
+    background: #345584;
+    border-radius: 4px;
+}
+.media {
+    position: absolute;
+    margin: 0;
+    left: 5%;
+    right: 55%;
+    top: 30%;
+    bottom: 27%;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+.line {
+    position: absolute;
+    margin: 0;
+    width: 13px;
+    height: 0;
+    left: 153px;
+    top: 9px;
+
+    border: 1px solid #BFC9D7;
+    transform: rotate(90deg);
+
+}
+
+.main-header {
+    position: absolute;
+    width: 1125px;
+    height: 13px;
+    left: 0;
+    top: 52px;
+}
+
+.category-header {
+    width: 100%;
+    height: 36px;
+}
+
+.ranking {
+    width: 100%;
+    height: 263px;
+}
+
+.wrapper {
+    width: 1126px;
+    margin: 30px auto 40px;
+}
+
+.main {
+    display: block;
+    float: left;
+    width: 779px;
+}
+
+.side {
+    float: right;
+    width: 312px;
+}
+
+.footer {
+    width: 100%;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*
+.header, .header-container, .category-header, .ranking, .main, .side, .footer {
+    border: 1px solid #aaa;
+    background-color: #ccc;
+}
+
+.header, .footer {
+    height: 100px;
+}
+.main, .side {
+    height: 500px;
+}
+*/
