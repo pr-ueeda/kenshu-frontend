@@ -1,106 +1,106 @@
 @charset "UTF-8";
 
-html {
-    font-family: system-ui, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+/* common */
+:root {
+    --bg-header:  #24436F;
+    --bg-ranking: #F2F2F2;
+    --bg-white:   #FFFFFF;
+    --black:      #3B3B3B;
+    --white:      #FFFFFF;
+}
+body {
+    font-size: 14px;
+    font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+    margin: 0;
+    color: var(--black);
+    background: var(--white);
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.wrapper {
+    padding: 40px 0 103px;
+}
+.wrapper--top {
+    background: var(--bg-white);
 }
 
+.container {
+    width: 1126px;
+    margin: 0 auto;
+}
+.container-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* header */
 .header {
-    position: absolute;
-    width: 1440px;
     height: 75px;
-    left: 0;
-    top: 0;
-    padding: 10px;
-    background-color: #24436F;
+    padding-top: 10px;
+    background-color: var(--bg-header);
 }
-.header-container {
-    position: absolute;
-    width: 1126px;
-    height: 75px;
-    left: 175px;
-    top: 0;
-
-}
-.header-small-container {
-    position: absolute;
-    width: 1126px;
-    height: 30px;
-    left: 0;
-    top: 13px;
-
-}
-
-.frame {
-    position: absolute;
-    width: 485px;
-    height: 30px;
-    left: 0;
-    top: 0;
+.header-flame {
+    display: flex;
+    align-items: center;
 }
 .logo {
-    position: absolute;
     width: 122px;
     height: 22px;
-    left: 0;
-    top: 4px;
+    margin-left: -3px;
+    margin-right: 18px;
 }
-
-.header-text-1 {
-    position: absolute;
-    width: 335px;
-    height: 30px;
-    margin: 0;
-    left: 140px;
-    top: 0;
-
-    font-style: normal;
-    font-weight: normal;
+.header-text {
     font-size: 12px;
-    line-height: 18px;
+    line-height: 1.5;
+    font-weight: normal;
+    color: #bfc9d7;
+}
+.header-release {
+    display: flex;
+    height: 30px;
+    align-items: center;
+}
+.header-release-list {
     display: flex;
     align-items: center;
-    color: #BFC9D7;
-
-}
-.release {
-    position: absolute;
-    width: 316px;
-    height: 30px;
-    left: 511px;
-    top: 0;
-
+    padding: 10px;
+    margin-right: 10px;
     background: #345584;
+    color: var(--white);
+
     border-radius: 4px;
 }
-.media {
-    position: absolute;
-    margin: 0;
-    left: 5%;
-    right: 55%;
-    top: 30%;
-    bottom: 27%;
-
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 18px;
-
-    display: flex;
-    align-items: center;
-
-    color: #FFFFFF;
+.header-release-list > li + li {
+    border-left: 1px solid #bfc9d7;
 }
-.line {
+
+.search-bar {
     position: absolute;
-    margin: 0;
-    width: 13px;
-    height: 0;
-    left: 153px;
-    top: 9px;
+    width: 288px;
+    height: 30px;
+    left: 838px;
+    top: 0;
 
-    border: 1px solid #BFC9D7;
-    transform: rotate(90deg);
+    border-radius: 4px 0 0 4px;
+}
+.search {
+    position: absolute;
+    width: 258px;
+    height: 30px;
+    padding: 0;
 
+    border-radius: 4px 0 0 4px;
+}
+.search-button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 258px;
+    top: 0;
+
+    background: #3081C9;
+    border-radius: 0 4px 4px 0;
 }
 
 .main-header {
@@ -109,6 +109,59 @@ html {
     height: 13px;
     left: 0;
     top: 52px;
+}
+.main-header-info {
+
+}
+.press-release {
+    position: absolute;
+    width: 89px;
+    height: 13px;
+    left: -1px;
+    top: 0;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+.main-header-ranking {
+    position: absolute;
+    width: 66px;
+    height: 13px;
+    left: 108px;
+    top: 0;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: #BFC9D7;
+
+}
+.tv {
+    position: absolute;
+    width: 20px;
+    height: 13px;
+    left: 194px;
+    top: 0;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: #BFC9D7;
+
 }
 
 .category-header {
