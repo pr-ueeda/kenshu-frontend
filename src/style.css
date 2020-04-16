@@ -66,14 +66,16 @@ body {
     align-items: center;
     padding: 10px;
     margin-right: 10px;
-    font-size: 13px;
     background: #345584;
-    color: var(--white);
-
     border-radius: 4px;
 }
 .header-release-list > li + li {
     border-left: 1px solid #BFC9D7;
+}
+.header-release-list li a {
+    font-size: 13px;
+    color: var(--white);
+    text-decoration: none;
 }
 
 .header-search-bar {
@@ -104,6 +106,10 @@ body {
 }
 .main-header-list > li + li {
     border-left: 1px solid #BFC9D7;
+}
+.main-header-list a {
+    color: var(--white);
+    text-decoration: none;
 }
 
 /* nav */
