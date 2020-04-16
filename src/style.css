@@ -67,106 +67,61 @@ body {
     padding: 10px;
     margin-right: 10px;
     background: #345584;
-    color: var(--white);
-
     border-radius: 4px;
 }
 .header-release-list > li + li {
-    border-left: 1px solid #bfc9d7;
+    border-left: 1px solid #BFC9D7;
+}
+.header-release-list li a {
+    font-size: 13px;
+    color: var(--white);
+    text-decoration: none;
 }
 
-.search-bar {
-    position: absolute;
-    width: 288px;
+.header-search-bar {
+    display: flex;
+}
+.header-search-bar input[type="text"] {
     height: 30px;
-    left: 838px;
-    top: 0;
-
-    border-radius: 4px 0 0 4px;
-}
-.search {
-    position: absolute;
+    border: none;
     width: 258px;
-    height: 30px;
-    padding: 0;
-
+    padding: 2px 15px;
+    line-height: 30px;
+    font-size: 13px;
     border-radius: 4px 0 0 4px;
 }
-.search-button {
-    position: absolute;
+.header-search-bar button {
     width: 30px;
     height: 30px;
-    left: 258px;
-    top: 0;
-
+    border: none;
     background: #3081C9;
     border-radius: 0 4px 4px 0;
 }
 
-.main-header {
-    position: absolute;
-    width: 1125px;
-    height: 13px;
-    left: 0;
-    top: 52px;
-}
-.main-header-info {
-
-}
-.press-release {
-    position: absolute;
-    width: 89px;
-    height: 13px;
-    left: -1px;
-    top: 0;
-
-    font-style: normal;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 19px;
+.main-header-list {
     display: flex;
-    align-items: center;
-
-    color: #FFFFFF;
+    padding: 8px 0;
+    margin-left: -5px;
+    color: var(--white);
 }
-.main-header-ranking {
-    position: absolute;
-    width: 66px;
-    height: 13px;
-    left: 108px;
-    top: 0;
-
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 19px;
-    display: flex;
-    align-items: center;
-
-    color: #BFC9D7;
-
+.main-header-list > li + li {
+    border-left: 1px solid #BFC9D7;
 }
-.tv {
-    position: absolute;
-    width: 20px;
-    height: 13px;
-    left: 194px;
-    top: 0;
-
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 19px;
-    display: flex;
-    align-items: center;
-
-    color: #BFC9D7;
-
+.main-header-list a {
+    color: var(--white);
+    text-decoration: none;
 }
 
-.category-header {
-    width: 100%;
+/* nav */
+.nav {
     height: 36px;
+    background-color: var(--bg-white);
+    border-bottom: 1px solid #E4E4E4;
+}
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .ranking {
