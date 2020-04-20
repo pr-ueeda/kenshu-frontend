@@ -156,6 +156,7 @@ body {
 .ranking {
     display: flex;
     align-items: stretch;
+    justify-content: space-between;
     height: 100%;
 }
 .ranking-item {
@@ -167,7 +168,6 @@ body {
     max-width: 181px;
     position: relative;
     flex-direction: column;
-    margin-right: 8px;
 }
 .ranking-number {
     position: absolute;
