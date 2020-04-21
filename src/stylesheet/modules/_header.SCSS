@@ -85,11 +85,11 @@
     padding-left: 10px;
   }
   .active {
-    color: var(--white);
+    color: $white;
     padding-left: 0;
   }
   a {
-    color: var(--white);
+    color: $white;
     text-decoration: none;
   }
 }

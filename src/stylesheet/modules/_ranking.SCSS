@@ -5,7 +5,7 @@
 /* ranking */
 .section-ranking {
   padding: 15px 0;
-  background-color: $bg-white;
+  background-color: $bg-grey;
 }
 
 .ranking {
@@ -41,8 +41,8 @@
   font-size: 17px;
   text-indent: -2px;
   z-index: 1;
-  background: var(--bg-header);
-  color: var(--white);
+  background: $bg-header;
+  color: $white;
 }
 
 .ranking-box-img {
