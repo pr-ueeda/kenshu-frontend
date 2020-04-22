@@ -1,26 +1,28 @@
 @charset "UTF-8";
-
 @import "../config/theme";
 
 /* nav */
-.nav {
+.category-header {
   height: 36px;
   background-color: $bg-white;
   border-bottom: 1px solid #e4e4e4;
-}
-
-.category-header {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 10px;
-  .category-header-link {
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  &__active {
+    padding-right: 20px;
+    font-weight: bold;
+    text-decoration: none;
     color: #294c7a;
   }
-  .active {
-    font-weight: bold;
-  }
-  a {
+
+  &__none {
     color: #294c7a;
     text-decoration: none;
     padding-right: 20px;
