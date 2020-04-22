@@ -1,8 +1,6 @@
 @charset "UTF-8";
 @import "../config/theme";
-@import "../mixin/mixin";
 
-/* header */
 .header {
   height: 75px;
   padding-top: 10px;
@@ -104,5 +102,3 @@
     text-decoration: none;
   }
 }
-
-/* end header */
