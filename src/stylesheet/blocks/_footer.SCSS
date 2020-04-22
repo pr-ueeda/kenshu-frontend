@@ -1,98 +1,97 @@
 @charset "UTF-8";
-
 @import "../config/theme";
-
-/* footer */
 
 .footer {
   padding: 50px 0 10px;
-  height: 356px;
+  height: 300px;
   background-color: $bg-grey;
 }
 
 .footer-content {
   width: 100%;
   display: flex;
-}
 
-.footer-menu-list {
-  width: 30%;
-  height: 210px;
-}
+  &__list {
+    width: 30%;
+    height: 210px;
+  }
 
-.option {
-  width: 50%;
-}
+  &__left-title {
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 13px;
+  }
 
-.footer-left-title {
-  padding-bottom: 10px;
-  font-weight: normal;
-  font-size: 13px;
-}
+  &__left-list {
+    height: 100%;
+  }
 
-.footer-left {
-  height: 100%;
-  li {
+  &__left-item {
     font-size: 12px;
     padding: 10px 0;
     color: $footer-text;
   }
-}
 
-.footer-center-title {
-  padding-bottom: 10px;
-  font-weight: normal;
-  font-size: 13px;
-}
+  &__center-title {
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 13px;
+  }
 
-.footer-center {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: 100%;
-  li {
+  &__center-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__center-item {
     font-size: 12px;
     padding: 10px 0;
     color: $footer-text;
   }
-}
 
-.footer-right-title {
-  padding-bottom: 10px;
-  font-weight: normal;
-  font-size: 13px;
-}
+  &__right-title {
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 13px;
+  }
 
-.footer-right {
-  height: 100%;
-  li {
+  &__right-list {
+    height: 100%;
+  }
+
+  &__right-item {
     font-size: 12px;
     padding: 10px 0;
     color: $footer-text;
   }
-}
 
-.footer-info {
-  margin-top: 30px;
-  padding-top: 20px;
-  border-top: 1px solid #e0e0e0;
-}
+  &__info {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+  }
 
-.footer-info-list {
-  display: flex;
-  li {
+  &__info-list {
+    display: flex;
+  }
+
+  &__info-item {
     padding-right: 15px;
     font-weight: normal;
     font-size: 12px;
     color: $footer-text;
   }
+
+  &__copyright {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 11px;
+    color: $footer-text;
+  }
 }
 
-.footer-copyright {
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 11px;
-  color: $footer-text;
+.option {
+  width: 50%;
 }
-
-/* end footer */
