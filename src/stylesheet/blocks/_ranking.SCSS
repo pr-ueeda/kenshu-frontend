@@ -1,8 +1,9 @@
 @charset "UTF-8";
 @import "../config/theme";
+@import "../mixin/mixin";
 
 .ranking-section {
-  padding: 15px 0;
+  padding: 25px 0;
   background-color: $bg-grey;
 
   &__list {
@@ -34,7 +35,7 @@
     font-size: 17px;
     text-indent: -2px;
     z-index: 1;
-    background: $bg-header;
+    background: $main-color;
     color: $white;
   }
 
@@ -54,7 +55,7 @@
   &__content {
     display: flex;
     flex: 1;
-    padding: 10px;
+    padding:7px;
     flex-direction: column;
     justify-content: space-between;
     line-height: 1.5;

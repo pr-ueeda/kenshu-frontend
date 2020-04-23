@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import "../config/theme";
-
+@import "../mixin/mixin";
 .main {
   height: 803px;
   padding: 35px 0;
@@ -39,6 +39,10 @@
   &__link {
     text-decoration: none;
     color: $black;
+  }
+
+  &__link:hover {
+    @include hover-animation();
   }
 
   &__box-wrap {
@@ -111,56 +115,5 @@
     color: $white;
     background-color: #3081c9;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
-  }
-
-  &__side {
-    list-style: none;
-    float: right;
-    width: 312px;
-    height: 733px;
-  }
-
-  &__side-title {
-    font-size: 18px;
-    font-weight: bold;
-  }
-
-  &__side-keywords {
-    width: 100%;
-    height: 105px;
-    border-bottom: 1px solid #e4e4e4;
-  }
-
-  &__side-keywords-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding-top: 30px;
-  }
-
-  &__side-keyword-item {
-    background-color: #f1f1f1;
-    border-radius: 11px;
-    font-size: 12px;
-    padding: 5px 10px;
-    margin: 5px;
-  }
-
-  &__side-keyword-seemore {
-    background-color: $white;
-    border-radius: 11px;
-    font-size: 12px;
-    padding: 5px 10px;
-    margin: 5px;
-  }
-
-  &__link-none {
-    color: $black;
-    text-decoration: none;
-  }
-
-  &__link-seemore {
-    color: black;
-    text-decoration: none;
   }
 }

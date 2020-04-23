@@ -1,10 +1,11 @@
 @charset "UTF-8";
 @import "../config/theme";
+@import "../mixin/mixin";
 
 .header {
   height: 75px;
   padding-top: 10px;
-  background-color: $bg-header;
+  background-color: $main-color;
 
   &-frame {
     display: flex;
@@ -20,7 +21,7 @@
       font-size: 12px;
       line-height: 1.5;
       font-weight: normal;
-      color: #bfc9d7;
+      color: $header-grey-text;
     }
   }
 
@@ -38,16 +39,22 @@
       border-radius: 4px;
     }
 
+    // 文字と文字の間に縦ライン
     li + li {
-      border-left: 1px solid #bfc9d7;
+      border-left: 1px solid $header-grey-text;
     }
 
+    // 全て同じ文字色なのでaタグにそのまま適用
     &__item {
       a {
         padding: 8px;
         font-size: 13px;
         color: $white;
         text-decoration: none;
+      }
+
+      a:hover {
+        @include hover-animation();
       }
     }
 
@@ -86,7 +93,7 @@
   }
 
   li + li {
-    border-left: 1px solid #bfc9d7;
+    border-left: 1px solid $header-grey-text;
   }
 
   &__active {
@@ -98,7 +105,11 @@
 
   &__none {
     padding: 0 8px;
-    color: #bfc9d7;
+    color: $header-grey-text;
     text-decoration: none;
+  }
+
+  &__none:hover {
+    @include hover-animation();
   }
 }
