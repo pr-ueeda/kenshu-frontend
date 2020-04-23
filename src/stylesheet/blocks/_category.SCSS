@@ -1,0 +1,34 @@
+@charset "UTF-8";
+@import "../config/theme";
+@import "../mixin/mixin";
+
+.category-header {
+  height: 36px;
+  background-color: $bg-white;
+  border-bottom: 1px solid #e4e4e4;
+  display: flex;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  &__active {
+    padding-right: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #294c7a;
+  }
+
+  &__none {
+    color: #294c7a;
+    text-decoration: none;
+    padding-right: 20px;
+  }
+
+  &__none:hover {
+    @include hover-animation(
+            $style: 'text-decoration', $color: $main-color);
+  }
+}

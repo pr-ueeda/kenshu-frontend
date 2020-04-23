@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import "../config/theme";
+@import "../mixin/mixin";
+
+.ranking-section {
+  padding: 25px 0;
+  background-color: $bg-grey;
+
+  &__list {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__article {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 181px;
+  }
+
+  &__number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 17px;
+    text-indent: -2px;
+    z-index: 1;
+    background: $main-color;
+    color: $white;
+  }
+
+  &__img {
+    height: 100px;
+    width: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      display: block;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex: 1;
+    padding:7px;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.5;
+    background-color: $white;
+  }
+
+  &__title {
+    font-weight: normal;
+    font-size: 13px;
+  }
+
+  &__clock {
+    color: $ranking-box;
+    font-size: 12px;
+  }
+
+  &__clock-icon {
+    width: 15px;
+    height: 15px;
+    vertical-align: -3px;
+  }
+
+  &__company {
+    color: $ranking-box;
+    font-size: 13px;
+  }
+
+  &__PVUU {
+    color: $ranking-box;
+    font-size: 13px;
+  }
+}

@@ -1,8 +1,21 @@
 {
-  "plugins": ["stylelint-scss"],
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-declaration-block-no-ignored-properties"
+  ],
   "extends": "stylelint-config-standard",
   "rules": {
     "at-rule-no-unknown": null,
-    "scss/at-rule-no-unknown": true
+    "rule-nested-empty-line-before": null,
+    "rule-non-nested-empty-line-before": null,
+    "declaration-empty-line-before": null,
+    "block-no-empty": null,
+    "block-closing-brace-newline-after": null,
+    "scss/at-rule-no-unknown": true,
+    "plugin/declaration-block-no-ignored-properties": true,
+    "at-rule-empty-line-before": null,
+    "rule-empty-line-before": null,
+    "number-leading-zero": null,
+    "indentation": null
   }
 }

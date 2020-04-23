@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@import "../config/theme";
+@import "../mixin/mixin";
+
+.footer {
+  padding: 50px 0 10px;
+  height: 300px;
+  background-color: $bg-grey;
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+
+  &__list {
+    width: 30%;
+    height: 210px;
+  }
+
+  &__list-option {
+    width: 50%;
+    height: 210px;
+  }
+
+  &__left-title {
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 13px;
+  }
+
+  &__left-list {
+    height: 100%;
+  }
+
+  &__left-item {
+    font-size: 12px;
+    padding: 10px 0;
+    color: $footer-text;
+  }
+
+  &__center-title {
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 13px;
+  }
+
+  &__center-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__center-item {
+    font-size: 12px;
+    padding: 10px 0;
+    color: $footer-text;
+  }
+
+  &__right-title {
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 13px;
+  }
+
+  &__right-list {
+    height: 100%;
+  }
+
+  &__right-item {
+    font-size: 12px;
+    padding: 10px 0;
+    color: $footer-text;
+  }
+
+  &__info {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+  }
+
+  &__info-list {
+    display: flex;
+  }
+
+  &__info-item {
+    padding-right: 15px;
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+  &__copyright {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 11px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $footer-text;
+  }
+
+  &__link:hover {
+    @include hover-animation(
+            $style: 'text-decoration', $color: $main-color);
+  }
+}

@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import "../config/theme";
+@import "../mixin/mixin";
+
+.header {
+  height: 75px;
+  padding-top: 10px;
+  background-color: $main-color;
+
+  &-frame {
+    display: flex;
+    align-items: center;
+
+    &__logo {
+      width: 122px;
+      height: 22px;
+      margin-right: 18px;
+    }
+
+    &__text {
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: normal;
+      color: $header-grey-text;
+    }
+  }
+
+  &-release {
+    display: flex;
+    height: 30px;
+    align-items: center;
+
+    &__list {
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      margin-right: 10px;
+      background: #345584;
+      border-radius: 4px;
+    }
+
+    // 文字と文字の間に縦ライン
+    li + li {
+      border-left: 1px solid $header-grey-text;
+    }
+
+    // 全て同じ文字色なのでaタグにそのまま適用
+    &__item {
+      a {
+        padding: 8px;
+        font-size: 13px;
+        color: $white;
+        text-decoration: none;
+      }
+
+      a:hover {
+        @include hover-animation();
+      }
+    }
+
+    &__search-bar {
+      display: flex;
+
+      input[type='text'] {
+        height: 26px;
+        border: none;
+        width: 258px;
+        padding: 2px 15px;
+        line-height: 30px;
+        font-size: 13px;
+        border-radius: 4px 0 0 4px;
+      }
+    }
+
+    button {
+      width: 30px;
+      height: 30px;
+      border: none;
+      background: #3081c9;
+      border-radius: 0 4px 4px 0;
+    }
+  }
+}
+
+.main-header {
+  display: flex;
+  padding-top: 10px;
+  margin-left: -2px;
+
+  &__list {
+    display: flex;
+    padding: 8px 8px 8px 0;
+  }
+
+  li + li {
+    border-left: 1px solid $header-grey-text;
+  }
+
+  &__active {
+    padding-left: 0;
+    padding-right: 8px;
+    color: $white;
+    text-decoration: none;
+  }
+
+  &__none {
+    padding: 0 8px;
+    color: $header-grey-text;
+    text-decoration: none;
+  }
+
+  &__none:hover {
+    @include hover-animation();
+  }
+}
