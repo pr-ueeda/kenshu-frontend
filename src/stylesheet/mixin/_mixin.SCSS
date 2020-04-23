@@ -1,7 +1,23 @@
 @charset "UTF-8";
 
-@mixin container($breakpoint: st) {
-  @media (max-width: $breakpoint) {
-    @content;
+@mixin hover-animation($style: null, $color: #000) {
+  @if $style == null {
+    $style: 'underline';
+  }
+
+  @if $style == 'text-decoration' {
+    // 文字に色をつけ、太く表示
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    &:hover {
+      text-decoration: $color;
+      font-weight: bold;
+    }
+  } @else {
+    &:hover {
+      // 下線を表示
+      text-decoration: underline;
+    }
   }
 }

@@ -6,10 +6,16 @@
   "extends": "stylelint-config-standard",
   "rules": {
     "at-rule-no-unknown": null,
-    "rule-nested-empty-line-before": "never",
-    "rule-non-nested-empty-line-before": "never",
+    "rule-nested-empty-line-before": null,
+    "rule-non-nested-empty-line-before": null,
+    "declaration-empty-line-before": null,
+    "block-no-empty": null,
+    "block-closing-brace-newline-after": null,
     "scss/at-rule-no-unknown": true,
     "plugin/declaration-block-no-ignored-properties": true,
-    "at-rule-empty-line-before": "never"
+    "at-rule-empty-line-before": null,
+    "rule-empty-line-before": null,
+    "number-leading-zero": null,
+    "indentation": null
   }
 }

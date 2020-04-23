@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@import "../config/theme";
+@import "../mixin/mixin";
+
+.main-content-side {
+  list-style: none;
+  float: right;
+  width: 312px;
+  height: 733px;
+
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__keywords {
+    width: 100%;
+    height: 105px;
+    border-bottom: 1px solid #e4e4e4;
+  }
+
+  &__keywords-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  // 共通要素が多いのでplaceholder selectorを記述
+  %__keyword-item {
+    border-radius: 11px;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin: 5px;
+  }
+
+  &__keyword-item {
+    @extend %__keyword-item;
+    background-color: #f1f1f1;
+  }
+
+  &__keyword-seemore {
+    @extend %__keyword-item;
+    background-color: $white;
+    border: 1px solid #f1f1f1;
+  }
+
+  // 色だけを変えたいためplaceholder selectorを記述
+  %__link-none {
+    text-decoration: none;
+    @include hover-animation(
+            $style: 'text-decoration',  $color: $black);
+  }
+
+  &__link-none {
+    @extend %__link-none;
+    color: $black;
+  }
+
+  &__link-seemore {
+    @extend %__link-none;
+    color: black;
+  }
+}
