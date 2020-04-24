@@ -46,19 +46,19 @@
   }
 
   // 色だけを変えたいためplaceholder selectorを記述
-  %__link-none {
+  %__link--none {
     text-decoration: none;
     @include hover-animation(
             $style: 'text-decoration',  $color: $black);
   }
 
-  &__link-none {
-    @extend %__link-none;
+  &__link--none {
+    @extend %__link--none;
     color: $black;
   }
 
-  &__link-seemore {
-    @extend %__link-none;
+  &__link--seemore {
+    @extend %__link--none;
     color: black;
   }
 }
