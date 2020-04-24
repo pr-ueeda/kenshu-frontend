@@ -14,20 +14,20 @@
     padding: 10px;
   }
 
-  &__active {
+  &--active {
     padding-right: 20px;
     font-weight: bold;
     text-decoration: none;
     color: #294c7a;
   }
 
-  &__none {
+  &--none {
     color: #294c7a;
     text-decoration: none;
     padding-right: 20px;
   }
 
-  &__none:hover {
+  &--none:hover {
     @include hover-animation(
             $style: 'text-decoration', $color: $main-color);
   }

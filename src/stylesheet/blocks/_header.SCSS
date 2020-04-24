@@ -51,9 +51,6 @@
         font-size: 13px;
         color: $white;
         text-decoration: none;
-      }
-
-      a:hover {
         @include hover-animation();
       }
     }
@@ -96,20 +93,18 @@
     border-left: 1px solid $header-grey-text;
   }
 
-  &__active {
+  &--active {
     padding-left: 0;
     padding-right: 8px;
     color: $white;
     text-decoration: none;
+    @include hover-animation();
   }
 
-  &__none {
+  &--none {
     padding: 0 8px;
     color: $header-grey-text;
     text-decoration: none;
-  }
-
-  &__none:hover {
     @include hover-animation();
   }
 }

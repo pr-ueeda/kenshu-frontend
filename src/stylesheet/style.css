@@ -117,7 +117,7 @@ body {
   color: #fff;
   text-decoration: none;
 }
-.header-release__item a:hover:hover {
+.header-release__item a:hover {
   text-decoration: underline;
 }
 .header-release__search-bar {
@@ -152,18 +152,21 @@ body {
 .main-header li + li {
   border-left: 1px solid #bfc9d7;
 }
-.main-header__active {
+.main-header--active {
   padding-left: 0;
   padding-right: 8px;
   color: #fff;
   text-decoration: none;
 }
-.main-header__none {
+.main-header--active:hover {
+  text-decoration: underline;
+}
+.main-header--none {
   padding: 0 8px;
   color: #bfc9d7;
   text-decoration: none;
 }
-.main-header__none:hover:hover {
+.main-header--none:hover {
   text-decoration: underline;
 }
 
@@ -179,23 +182,23 @@ body {
   justify-content: center;
   padding: 10px;
 }
-.category-header__active {
+.category-header--active {
   padding-right: 20px;
   font-weight: bold;
   text-decoration: none;
   color: #294c7a;
 }
-.category-header__none {
+.category-header--none {
   color: #294c7a;
   text-decoration: none;
   padding-right: 20px;
 }
-.category-header__none:hover {
+.category-header--none:hover {
   position: relative;
   display: inline-block;
   text-decoration: none;
 }
-.category-header__none:hover:hover {
+.category-header--none:hover:hover {
   text-decoration: #24436f;
   font-weight: bold;
 }
@@ -319,7 +322,7 @@ body {
 .main-content__box-wrap {
   padding: 15px 0;
 }
-.main-content__box-title\&img {
+.main-content__box-unit {
   height: 66px;
   width: 100%;
   display: flex;
@@ -413,20 +416,20 @@ body {
   background-color: #fff;
   border: 1px solid #f1f1f1;
 }
-.main-content-side .main-content-side__link-seemore, .main-content-side .main-content-side__link-none {
+.main-content-side .main-content-side__link--seemore, .main-content-side .main-content-side__link--none {
   text-decoration: none;
   position: relative;
   display: inline-block;
   text-decoration: none;
 }
-.main-content-side .main-content-side__link-seemore:hover, .main-content-side .main-content-side__link-none:hover {
+.main-content-side .main-content-side__link--seemore:hover, .main-content-side .main-content-side__link--none:hover {
   text-decoration: #3b3b3b;
   font-weight: bold;
 }
-.main-content-side__link-none {
+.main-content-side__link--none {
   color: #3b3b3b;
 }
-.main-content-side__link-seemore {
+.main-content-side__link--seemore {
   color: black;
 }
 
