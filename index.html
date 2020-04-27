@@ -7,8 +7,26 @@
   <meta name="description" content="プレスリリースをPR TIMESで配信して、効果的なPRを実現。上場企業の38.60%（1,470社/3,808社）が利用する現在シェアNo.1のプレスリリース配信代行サービス。話題のベンチャー～グローバル企業のニュースリリースが集まる生活者も要注目のサイトです。プレスリリースの受信は無料です。">
   <meta name="keywords" content="プレスリリース,ニュースリリース,配信,サイト,サービス,方法,代行,PR TIMES">
   <link rel="stylesheet" href="src/stylesheet/style.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      $('#js-modal').css('display', 'none').fadeIn();
+
+      $('#js-background').click(function () {
+        $('#js-modal').fadeOut();
+      });
+    });
+  </script>
 </head>
 <body>
+<div class="modal" id="js-modal">
+  <div class="modal-inner">
+    <div class="modal-inner__image">
+      <img src="src/images/common/logo_prtimes.svg" alt="modal image">
+    </div>
+  </div>
+  <div class="modal-background" id="js-background"></div>
+</div>
   <header class="header">
     <div class="container">
      <div class="container-header">
